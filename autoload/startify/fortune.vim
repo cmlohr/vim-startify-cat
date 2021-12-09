@@ -41,8 +41,8 @@ function! startify#fortune#boxed(...) abort
   return wrapped_quote
 endfunction
 
-" Function: #cowsay {{{1
-function! startify#fortune#cowsay(...) abort
+" Function: #catsay {{{1
+function! startify#fortune#catsay(...) abort
   if a:0
     let quote = a:0 && type(a:1) == type([]) ? a:1 : startify#fortune#quote()
     let s:char_top_bottom   = get(a:000, 1, s:char_top_bottom)
@@ -55,7 +55,7 @@ function! startify#fortune#cowsay(...) abort
     let quote = startify#fortune#quote()
   endif
   let boxed_quote = startify#fortune#boxed(quote)
-  return boxed_quote + s:cow
+  return boxed_quote + s:cat
 endfunction
 
 " Function: #predefined_quotes {{{1
@@ -64,13 +64,21 @@ function! startify#fortune#predefined_quotes() abort
 endfunction
 
 " Variables {{{1
-let s:cow = [
+let s:cat = [
       \ '       o',
-      \ '        o   ^__^',
-      \ '         o  (oo)\_______',
-      \ '            (__)\       )\/\',
-      \ '                ||----w |',
-      \ '                ||     ||',
+      \ '        o',
+      \ '         o',
+      \"  ,-.       _,---._ __  / \",
+      \" /  )    .-'       `./ /   \",
+      \"(  (   ,'            `/    /|",
+      \" \  `-"             \'\   / |",
+      \"  `.              ,  \ \ /  |",
+      \"   /`.          ,'-`----Y   |",
+      \"  (            ;        |   '",
+      \"  |  ,-.    ,-'         |  /",
+      \"  |  | (   |            | /",
+      \"  )  |  \  `.___________|/",
+      \"  `--'   `--'",
       \ ]
 
 let g:startify_fortune_use_unicode = &encoding == 'utf-8' && get(g:, 'startify_fortune_use_unicode')
