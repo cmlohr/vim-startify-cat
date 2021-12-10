@@ -4,7 +4,9 @@
 
 ---
 
-This plugin provides a start screen for Vim and Neovim.
+This plugin provides a start screen for Vim and Neovim.  It works exactly the same as the original Startify, only I added a cat to the start screen because cats.  Full update to the readme is coming soon. :D  
+
+
 
 It provides **dynamically created headers or footers** and uses configurable
 lists to show **recently used or bookmarked files** and **persistent sessions**.
@@ -41,6 +43,7 @@ If you want to share anything with your fellow plugin users, make sure to visit
 the [wiki](https://github.com/mhinz/vim-startify/wiki).
 
 ## Screenshot
+### !!The ASCII cow below has been replaced with a cat!!
 
 ![Startify in action!](https://github.com/mhinz/vim-startify/blob/master/images/startify-menu.png)
 
