@@ -6,6 +6,8 @@
 
 This plugin provides a start screen for Vim and Neovim.  It works exactly the same as the original Startify, only I added a cat to the start screen because cats.  Full update to the readme is coming soon. :D  
 
+The cat ASCII was inspired by hjw and altered by me to allow it to fit into the code and give it a slight personal touch.
+
 
 
 It provides **dynamically created headers or footers** and uses configurable
